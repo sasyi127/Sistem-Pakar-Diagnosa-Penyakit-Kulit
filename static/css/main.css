@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2/family=Patrick+Hand&display=swap");
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Patrick Hand", cursive;
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: orangered;
+}
+
+.autumn {
+  background-image: url("https://th.bing.com/th/id/R.ab5abc4b37a6f776ccd011465ae10751?rik=k%2fGfGAWxICVpnA&riu=http%3a%2f%2fthumb16.lg.iclickart.co.kr%2fThumb16%2f4140000%2f4139941.jpg&ehk=qhPnziHRXQar%2fMOa87iV33xu7FOY2wfhKkG3nAn1poI%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pohon {
+  background-image: url("https://thumbs.dreamstime.com/z/orange-maple-autumn-leaf-border-space-copy-over-white-background-top-view-orange-maple-autumn-leaf-border-space-151748957.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.daun {
+  background-image: url("https://pngimg.com/uploads/autumn_leaves/autumn_leaves_PNG3606.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: orangered;
+}
+
+h2 {
+  text-align: center;
+  color: orangered;
+}
+
+h3 {
+  text-align: center;
+  color: oldlace;
+}
+
+h5 {
+  text-align: center;
+  color: orangered;
+}
+
+ul {
+  text-align: left;
+  color: orangered;
+}
+
+.navwrapper {
+  width: 100%;
+  height: 80px;
+  background-color: orangered;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.contentwrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 25px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.nav:hover {
+  background-color: oldlace;
+  border-radius: 10px;
+  transition: all ease-in-out 0.25s;
+}
+
+.nav:hover > a {
+  color: orangered;
+}
+
+.navlink {
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+
+.img-preview {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  border: 5px solid orangered;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.img-preview > div {
+  width: 100%;
+  height: 100%;
+  background-size: 256px 256px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload-label {
+  display: inline-block;
+  padding: 12px 30px;
+  background: orangered;
+  color: oldlace;
+  font-size: 1em;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.upload-label:hover {
+  background: orange;
+  color: oldlace;
+}
+
+.loader {
+  border: 8px solid orange;
+  border-top: 8px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+button {
+  background: orangered;
+  color: oldlace;
+  width: 30%;
+  height: 40px;
+  border: orangered;
+}
